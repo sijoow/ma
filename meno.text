@@ -1,0 +1,37 @@
+1.리액트 설정
+create-react-app 파일명
+
+2.라이브러리 설치
+※라이브러리 설치 안될시 yarm 으로 설치
+npm install --global yarn
+
+2-1 
+리액트 라우터
+npm i react-router-dom  일반버전  일반버전 설치 안될시 얌으로 설치
+yarn add react-router-dom 얌버전
+App.js
+import React ,{Component} from 'react';
+import { BrowserRouter,Route, Link,Switch } from "react-router-dom";
+////
+BrowserRouter - history API를 사용해 URL과 UI를 동기화하는 라우터입니다.
+Route - 컴포넌트의 속성에 설정된 URL과 현재 경로가 일치하면 해당하는 컴포넌트, 함수를 렌더링한다.
+Link - 'a'태그와 비슷합니다. to속성에 설정된 링크로 이동합니다. 기록이 history스택에 저장됩니다.
+Switch - 자식 컴포넌트 Route또는 Redirect중 매치되는 첫 번째 요소를 렌더링합니다. Switch를 사용하면 BrowserRouter만 사용할 때와 다르게 하나의 매칭되는 요소만 렌더링한다는 점을 보장해줍니다.
+사용하지 않을 경우 매칭되는 모두를 렌더링합니다.
+<Routes><Route path="" element={}/></Routes>
+////
+2-2 스타일컴포넌트 설치
+npm i styled-components
+import styled from "styled-components"; (최상단추가)
+EX
+styled.button`
+  font-size: 1rem;
+`
+2-3 리덕스tookit 설치
+npm i redux react-redux
+yarn add @reduxjs/toolkit
+
+2-4 axios 설치
+
+npm install axios
+
